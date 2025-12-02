@@ -3,7 +3,7 @@ const app = express();
 const orderRoute= require("./routes/order")
 
 app.use(express.json());
-app.use("/api/v1/",orderRoute);
+app.use("/api/v1",orderRoute);
 
 
 

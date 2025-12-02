@@ -11,7 +11,6 @@ wss.on('connection', function connection(ws) {
    await subscriber.SUBSCRIBE("book_Update",(message)=>{
     let parsedMessage = JSON.parse(message);
     broadcast(JSON.stringify(parsedMessage))
-
    })
 })()
 })
